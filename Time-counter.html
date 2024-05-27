@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeAddict</title>
+    <link rel="stylesheet" href="Time-counter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titre">Calculate your Time</h1>
+      <div class="time-input">
+        <form>
+          Start Time:
+          <div>
+            <label for="hour-debut"></label>
+            <input
+              type="number"
+              id="hour-debut"
+              placeholder="hour"
+              min="0"
+              max="23" />
+            :
+          </div>
+          <div>
+            <label for="minute-debut"></label>
+            <input
+              type="number"
+              id="minute-debut"
+              placeholder="minute"
+              min="0"
+              max="59" />
+          </div>
+        </form>
+      </div>
+      <div class="time-input">
+        <form>
+          End Time:
+          <div>
+            <label for="hour-fin"></label>
+            <input
+              type="number"
+              id="hour-fin"
+              placeholder="hour"
+              min="0"
+              max="23" />
+            :
+          </div>
+          <div>
+            <label for="minute-fin"></label>
+            <input
+              type="number"
+              id="minute-fin"
+              placeholder="minute"
+              min="0"
+              max="59" />
+          </div>
+        </form>
+      </div>
+      <div class="bouton">
+        <button class="calcule">Calculate</button>
+      </div>
+      <div class="heure-calcule">Calculated Time :</div>
+    </div>
+    <script src="Time-counter.js"></script>
+  </body>
+</html>

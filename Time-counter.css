@@ -1,0 +1,67 @@
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background: linear-gradient(rgb(245, 243, 243), rgb(121, 72, 110));
+  border-radius: 50px;
+}
+
+.time-input form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 10px;
+  margin: 0 200px 0 200px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+input {
+  width: 100px;
+  height: 30px;
+  text-align: end;
+  margin-right: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgb(150, 223, 223);
+}
+.titre {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+.bouton {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin: 0 300px 0 300px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.calcule {
+  width: 100px;
+
+  border-radius: 50px;
+  background-color: rgb(176, 243, 212);
+  padding: 10px;
+  display: inline-block;
+}
+
+.heure-calcule {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 0 300px 0 300px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 20px;
+}
