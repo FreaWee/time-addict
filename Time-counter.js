@@ -3,17 +3,19 @@ const minuteInputDebut = document.getElementById("minute-debut");
 const hourInputFin = document.getElementById("hour-fin");
 const minuteInputFin = document.getElementById("minute-fin");
 
-const boutton = document
-  .querySelector(".calcule")
-  .addEventListener("click", () => {
-    hourInputDebut.value;
-    minuteInputDebut.value;
-    hourInputFin.value;
-    minuteInputFin.value;
+function buttonAction() {
+  document.querySelector(".container").addEventListener("keypress", () => {
+    if (event.key === "Enter") {
+      hourInputDebut.value;
+      minuteInputDebut.value;
+      hourInputFin.value;
+      minuteInputFin.value;
 
-    document.querySelector(".heure-calcule").innerHTML =
-      `Total Time ` + calculateTime();
+      document.querySelector(".heure-calcule").innerHTML =
+        `Total Time ` + calculateTime();
+    }
   });
+}
 
 function calculateTime() {
   let hours = hourInputFin.value - hourInputDebut.value;
@@ -27,3 +29,5 @@ function calculateTime() {
 
   return hours + "h:" + minutes + "m";
 }
+
+buttonAction();
